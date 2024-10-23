@@ -117,4 +117,20 @@ moveTask(OrderProjectTask1, SupplyProjectBoard, OrdersProjectBoard, scott@g.in) 
 
 
 
+OUTPUT-----
+
+/Users/shreyasharma/Library/Java/JavaVirtualMachines/openjdk-23/Contents/Home/bin/java -javaagent:/Applications/IntelliJ IDEA CE.app/Contents/lib/idea_rt.jar=50597:/Applications/IntelliJ IDEA CE.app/Contents/bin -Dfile.encoding=UTF-8 -Dsun.stdout.encoding=UTF-8 -Dsun.stderr.encoding=UTF-8 -classpath /Users/shreyasharma/Desktop/Practice1/out/production/Practice1 practice1.Main
+List OrderProjectList1 have cards: 
+Card OrderProjectTask2 is present with priority P2
+Card OrderProjectTask5 is present with priority P0
+Card OrderProjectTask1 is present with priority P0
+List OrderProjectList2 have cards: 
+Card OrderProjectTask4 is present with priority P1
+Card OrderProjectTask3 is present with priority P1
+Board OrdersProjectBoard deleted Successfully
+Board not present
+List not present
+Card not present
+
+
 
