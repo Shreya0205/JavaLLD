@@ -4,6 +4,7 @@ import practice1.BoardAccess;
 
 import javax.swing.*;
 import java.net.Inet4Address;
+import java.util.ArrayList;
 import java.util.Collection;
 import java.util.HashMap;
 
@@ -60,20 +61,27 @@ public class Board {
         this.users.remove(emailID);
     }
 
-    public void removeList(String name){
-        this.lists.remove(name);
+    public void removeList(Integer listID){
+        this.lists.remove(listID);
     }
 
     public boolean isUserPresent(String emailID){
         return this.users.containsKey(emailID);
     }
 
-    public boolean isListPresent(String name){
-        return this.lists.containsKey(name);
+    public boolean isListPresent(Integer listID){
+        return this.lists.containsKey(listID);
     }
 
-    public Collection<Integer> getAllList(){
-        return this.lists.keySet();
+    public ArrayList<List> getAllList(){
+        ArrayList<List> listArrayList = new ArrayList<>(this.lists.values());
+        return listArrayList;
+    }
+
+    public void deleteLists(){
+        for(List list: this.lists.values())
+            list.deleteCards();
+        this.lists.clear();
     }
 
 }

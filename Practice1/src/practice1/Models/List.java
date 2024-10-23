@@ -42,9 +42,19 @@ public class List {
         ArrayList<Card> cardArrayList = new ArrayList<>(this.cards.values());
         cardArrayList.sort(Comparator.comparing(Card::getPriority).reversed());
 
+
         for (Card card: cardArrayList){
            System.out.println("Card " + card.getName() + " is present with priority " + card.getPriority());
         }
+    }
 
+    public void deleteCards(){
+        this.cards.clear();
+
+    }
+
+    public ArrayList<Card> getAllCards(){
+        ArrayList<Card> arrayList = new ArrayList<>(this.cards.values());
+        return arrayList;
     }
 }

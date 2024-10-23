@@ -12,9 +12,10 @@ public class UserService {
         this.users =  new HashMap<>();
     }
 
-    public void createUser(String name, String emailID){
+    public User createUser(String name, String emailID){
         User user = new User(emailID, name);
         this.users.put(emailID, user);
+        return user;
     }
 
     public User getUser(String emailID){
