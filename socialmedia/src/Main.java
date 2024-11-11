@@ -2,6 +2,8 @@
 // click the <icon src="AllIcons.Actions.Execute"/> icon in the gutter.
 public class Main {
     public static void main(String[] args) {
+        https://leetcode.com/discuss/interview-question/5011123/Flipkart-SDE-2-Machine-Coding-April-12
+        
         Portal portal = new Portal();
 
         portal.register("lucious");
